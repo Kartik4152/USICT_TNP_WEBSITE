@@ -3,7 +3,7 @@ import Logo_IPU from "../assets/GGSIPU-logo.png";
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center px-4 py-2 bg-slate-50 shadow-lg'>
+    <div className='flex justify-between items-center px-4 py-2 bg-slate-50 shadow-lg fixed top-0 left-0 w-full z-50'>
       <div className='flex items-center'>
         <img src={Logo_IPU} alt="IPU Logo" className='w-16 h-16 object-contain mr-4'/>
         <div className='flex flex-col'>
