@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './sections/Footer';
 import Navbar from './sections/Navbar';
+import AboutUs from './sections/aboutus';
 import Header from './sections/Header';
 import Communique from "./sections/Communique";
 import Rankings from "./sections/Rankings";
