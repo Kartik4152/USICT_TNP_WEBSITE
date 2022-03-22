@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import test from "../assets/test.jpg";
 let persons = [
   {
@@ -36,10 +37,12 @@ function Communique() {
       <Swiper
         cssMode={true}
         navigation={true}
+        loop={true}
         pagination={false}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+        autoplay={{ delay: 3000 }}
         className="mySwiper min-h-[25rem] w-full flex items-center"
       >
         {persons.map((person) => {
