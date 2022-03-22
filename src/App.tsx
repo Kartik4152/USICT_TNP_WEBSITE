@@ -1,33 +1,23 @@
 import React from 'react';
 import Footer from './sections/Footer';
 import Navbar from './sections/Navbar';
-import AboutUs from './sections/aboutus';
+import AboutUs from './sections/AboutUs';
 import Header from './sections/Header';
 import Communique from "./sections/Communique";
 import Rankings from "./sections/Rankings";
 import Statistics from "./sections/Statistics";
-import Accordion from './sections/Accordion';
-import { accordionData } from './sections/content';
+import Faq from './sections/Faq';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Header />
+      <AboutUs />
       <Rankings />
       <Communique />
       <Statistics />
-      <div>
-      <div id="statistics" className='w-full flex justify-center'>
-        <div className='w-4/5 flex flex-col items-center'>
-            <h1 className='mb-4 text-4xl font-bold text-[#003865] leading-loosey'>FREQUENTLY ASKED QUESTIONS</h1>
-        </div>
-      </div>
-      <div className="accordion">
-          {accordionData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
-          ))}
-        </div>
-    </div>
+      <Faq />
       <Footer />
     </>
   );

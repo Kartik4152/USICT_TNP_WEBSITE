@@ -29,7 +29,7 @@ let persons = [
 ];
 function Communique() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center pt-2">
       <div className="text-[#003865] text-4xl font-black leading-loose  ">
         Alumni Communique
       </div>

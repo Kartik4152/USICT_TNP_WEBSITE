@@ -1,4 +1,6 @@
-export const accordionData = [
+import Accordion from "../components/Accordion";
+
+const accordionData = [
     {
       title: 'Lorem ipsum, dolor sit amet consectetur adipisicing?',
       content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
@@ -40,3 +42,22 @@ export const accordionData = [
       Repudiandae, mollitia id reprehenderit a ab odit!`
     }
   ];
+
+const Faq = () => {
+  return (
+    <div className="w-full">
+      <div id="faq" className='w-full flex justify-center'>
+        <div className='w-4/5 flex flex-col items-center'>
+            <h1 className='mb-4 text-4xl font-bold text-[#003865] leading-loose'>FREQUENTLY ASKED QUESTIONS</h1>
+        </div>
+      </div>
+      <div className="max-w-[50rem] my-8 mx-auto">
+          {accordionData.map(({ title, content }) => (
+            <Accordion title={title} content={content} />
+          ))}
+        </div>
+    </div>
+  )
+}
+
+export default Faq
