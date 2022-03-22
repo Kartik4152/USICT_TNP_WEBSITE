@@ -3,7 +3,53 @@
 @tailwind utilities;
 
 *, *::after, *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  scroll-behavior: smooth;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.accordion {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #F7F9F9 ;
+}
+
+.accordion-title:hover {
+  background-color: #E7E9E8 ;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: #F7F9F9;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  .accordion {
+    width: 90%;
+  }
 }
