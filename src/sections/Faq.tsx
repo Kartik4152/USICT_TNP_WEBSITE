@@ -45,12 +45,10 @@ const accordionData = [
 
 const Faq = () => {
   return (
-    <div className="w-full">
-      <div id="faq" className="w-full flex justify-center">
-        <div className="w-4/5 flex flex-col items-center">
-          <h1 className="mb-4 text-4xl font-bold text-[#003865] leading-loose">
-            FREQUENTLY ASKED QUESTIONS
-          </h1>
+    <div className="w-full py-8">
+      <div id="faq" className='w-full flex justify-center'>
+        <div className='w-4/5 flex flex-col items-center'>
+            <h1 className='mb-4 text-4xl font-bold text-[#003865] leading-loose'>FREQUENTLY ASKED QUESTIONS</h1>
         </div>
       </div>
       <div className="max-w-[70rem] my-8 mx-auto">
