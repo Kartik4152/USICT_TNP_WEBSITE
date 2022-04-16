@@ -29,21 +29,21 @@ const Header = () => (
               HIGHEST PACKAGE:
               <br />
               {' '}
-              RS 32 LPA
+              RS 44.14 LPA
             </h1>
           </div>
           <div className="col-span-2  grid grid-cols-3  ">
             <i className="text-6xl fa-solid fa-users-line text-yellow-400" />
-            <h1 className="text-4xl col-span-2">40+ RECRUITERS</h1>
+            <h1 className="text-4xl col-span-2">100+ RECRUITERS</h1>
           </div>
           <div className="col-span-2  grid grid-cols-3  ">
             <i className="text-6xl fa-solid fa-arrow-up-wide-short text-yellow-400 " />
-            <h1 className="text-4xl col-span-2  "> 250+ OFFERS </h1>
+            <h1 className="text-4xl col-span-2  "> 370+ OFFERS </h1>
           </div>
           <div className="col-span-2  grid grid-cols-3 ">
             <i className="text-6xl fa-solid fa-circle-notch text-yellow-400" />
             <h1 className="text-4xl col-span-2">
-              94% STUDENTS
+              91% STUDENTS
               {' '}
               <br />
               PLACED!
@@ -54,29 +54,29 @@ const Header = () => (
       <SwiperSlide>
         <div className="grid grid-cols-4 gap-10 absolute z-10 m-auto top-1/3 right-64 left-64 bottom-1/3 text-white">
           <div className="col-span-2  grid grid-cols-3  ">
-            <i className="text-6xl fa-solid fa-indian-rupee-sign text-yellow-400" />
+            <i className="text-6xl fa-solid  fa-dollar-sign text-yellow-400 text-center" />
             <h1 className="text-4xl col-span-2 ">
-              HIGHEST PACKAGE:
-              <br />
+              Dream Offers:
+              {/* <br /> */}
               {' '}
-              RS 32 LPA
+              65+
             </h1>
           </div>
           <div className="col-span-2  grid grid-cols-3  ">
-            <i className="text-6xl fa-solid fa-users-line text-yellow-400" />
-            <h1 className="text-4xl col-span-2">40+ RECRUITERS</h1>
+            <i className="text-6xl fa-solid fa-laptop-code  text-yellow-400" />
+            <h1 className="text-4xl col-span-2">110+ Internship Offers</h1>
           </div>
           <div className="col-span-2  grid grid-cols-3  ">
-            <i className="text-6xl fa-solid fa-arrow-up-wide-short text-yellow-400 " />
-            <h1 className="text-4xl col-span-2  "> 250+ OFFERS </h1>
+            <i className="text-6xl fa-solid fa-code text-yellow-400 " />
+            <h1 className="text-4xl col-span-2  "> 7 GSOC Selections</h1>
           </div>
           <div className="col-span-2  grid grid-cols-3 ">
-            <i className="text-6xl fa-solid fa-circle-notch text-yellow-400" />
+            <i className="text-6xl fa-solid  fa-percent text-yellow-400" />
             <h1 className="text-4xl col-span-2">
-              94% STUDENTS
+              Average Package:
               {' '}
               <br />
-              PLACED!
+              12.50 LPA
             </h1>
           </div>
         </div>

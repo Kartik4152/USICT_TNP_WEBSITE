@@ -6,8 +6,8 @@ import logoPhone from '../assets/contact_icon.png';
 import logoMail from '../assets/mail_icon.png';
 import logoInstagram from '../assets/instagram_icon.png';
 import logoLinkedin from '../assets/linkedin_icon.png';
-import logoTwitter from '../assets/twitter_icon.png';
-
+import logoFacebook from '../assets/facebook.webp';
+/* eslint-disable */
 const Footer = () => (
   <div id="footer" className="bg-[#242424] w-full flex flex-col items-center">
     <div className="w-3/5 py-12 text-white">
@@ -25,18 +25,27 @@ const Footer = () => (
         </div>
         <div className="flex flex-col space-y-4">
           <h1 className="uppercase text-2xl">Social Links</h1>
-          <span className="flex">
+          <a href="https://instagram.com/tnp_usict">
+          <span
+            role="button"
+            className="flex cursor-pointer"
+          >
             <img src={logoInstagram} alt="social logo" className="w-6 h-6 object-contain mr-4" />
             Instagram
           </span>
-          <span className="flex">
+          </a>
+          <a href="https://www.linkedin.com/company/tnp-usict/">
+          <span className="flex cursor-pointer">
             <img src={logoLinkedin} alt="social logo" className="w-6 h-6 object-contain mr-4" />
             Linkedin
           </span>
-          <span className="flex">
-            <img src={logoTwitter} alt="social logo" className="w-6 h-6 object-contain mr-4" />
-            Twitter
+          </a>
+          <a href="https://www.facebook.com/USSPlacements">
+          <span className="flex cursor-pointer">
+            <img src={logoFacebook} alt="social logo" className="w-6 h-6 object-contain mr-4" />
+            Facebook
           </span>
+          </a>
         </div>
         <img src={QrCode} alt="qr code" className="w-48 h-48 object-contain object-right" />
       </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import BorderCard from '../components/BorderCard';
 import CompaniesVisited from '../components/Graphs/CompaniesVisited';
-import HighestPackage from '../assets/highest_package.png';
-import industries from '../assets/industries.png';
-import expertise from '../assets/expertise.png';
+import HighestPackage from '../assets/offers.svg';
+import industries from '../assets/average.svg';
+import expertise from '../assets/Final.svg';
 
 const Statistics = () => (
   <div id="statistics" className="w-full flex justify-center pt-8 pb-12">
@@ -23,17 +23,17 @@ const Statistics = () => (
         </h1>
         <CompaniesVisited />
         <h1 className="mb-4 text-center text-2xl font-bold text-[#003865] leading-loose">
-          Highest Package
+          Total Number of Offers
         </h1>
         <img src={HighestPackage} alt="highest package" className="w-full object-contain mb-8" />
         <div className="w-full grid grid-rows-1 grid-cols-2 gap-8">
           <div className="col-span-1">
             <h1 className="text-center text-2xl font-bold text-[#003865] leading-loose">Students Expertise</h1>
-            <img src={expertise} alt="expertise" className="object-contain w-full" />
+            <img src={expertise} alt="expertise" className="object-contain h-[22rem] w-full " />
           </div>
           <div className="col-span-1">
-            <h1 className="text-center text-2xl font-bold text-[#003865] leading-loose">Industries</h1>
-            <img src={industries} alt="industries" className="object-contain w-full" />
+            <h1 className="text-center text-2xl font-bold text-[#003865] leading-loose">Average Package</h1>
+            <img src={industries} alt="industries" className="object-contain h-[22rem] pt-24" />
           </div>
         </div>
       </div>

@@ -10,12 +10,17 @@ const Navbar = () => (
         <span className="border-t-[1px] border-black border-opacity-50 leading-4">Guru Gobind Singh Indraprastha University</span>
       </div>
     </div>
-    <div className="flex space-x-4 items-center">
-      <span>Home</span>
-      <span>Procedure</span>
-      <span>Recruiters</span>
-      <span>Statistics</span>
-      <div className="bg-[#003865] px-4 py-2 rounded-sm text-white">Login/Sign Up</div>
+    <div className="flex space-x-4 items-center cursor-pointer">
+      <a href="#header"><span>Home</span></a>
+      <a href="#about_us"><span>About Us</span></a>
+      <a href="#ranking"><span>Rankings</span></a>
+      <a href="#communique"><span>Alumni Communique</span></a>
+      <a href="#statistics"><span>Statistics</span></a>
+      <a href="#faq"><span>FAQs</span></a>
+      <a href="#footer"><span>Contact</span></a>
+      <a href="https://usict-ggsipu.calyxpod.com/sorNHC/sign-up" target="_blank" rel="noreferrer">
+        <div className="bg-[#003865] px-4 py-2 rounded-sm text-white" role="button">Login/Sign Up</div>
+      </a>
     </div>
   </div>
 );

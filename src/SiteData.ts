@@ -49,11 +49,11 @@ export default {
     data: [
       {
         question: 'How do I contact USICT as a recruiter',
-        answer: 'nahi pta'
+        answer: 'A contact between the recruiters and the cell can be established through our email - usict.placementcell@ipu.ac.in . Recruiters are also request to fill the following Job Notification Form (JNF) form in case they want to conduct on campus placement drives. Link to JNF- https://forms.gle/Q9pUWriyy8qYd5Q46'
       },
       {
         question: 'What are recent placement statistics',
-        answer: 'nahi pta'
+        answer: 'All the updated placement statistics are uploaded and maintained by each school on their individual pages. It is advised that you visit the individual school’s placement page for more details'
       },
       {
         question: 'What are the recently published opportunities for me',
@@ -65,11 +65,11 @@ export default {
       },
       {
         question: 'How do escalate my queries for fastest resolutions',
-        answer: 'nahi pta'
+        answer: 'All the queries regarding the placements should be escalated through our email channels for faster resolutions.Email- students.usict.tpc@ipu.ac.in'
       },
       {
         question: 'What are the placement policies',
-        answer: 'nahi pta'
+        answer: 'Yet to be disclosed.'
       }
     ]
   }
