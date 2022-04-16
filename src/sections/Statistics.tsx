@@ -12,10 +12,10 @@ const Statistics = () => (
         Statistics
       </h1>
       <div className="w-full flex justify-center space-x-4 mb-12">
-        <BorderCard title="Highest Package" content="55 LPA" variant="primary" />
-        <BorderCard title="Companies visiting" content="500+" variant="secondary" />
-        <BorderCard title="Average package" content="14 LPA" variant="fill" />
-        <BorderCard title="Minimum package" content="10 LPA" variant="fill" />
+        <BorderCard title="Highest Package" content="44.14 LPA" variant="primary" />
+        <BorderCard title="Companies visiting" content="100+" variant="secondary" />
+        <BorderCard title="Average package" content="12.50 LPA" variant="fill" />
+        <BorderCard title="Internship Offers" content="110+" variant="fill" />
       </div>
       <div className="w-full flex flex-col items-center">
         <h1 className="mb-4 text-center text-2xl font-bold text-[#003865] leading-loose">
