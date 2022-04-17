@@ -37,22 +37,27 @@ body {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23facc15'%2F%3E%3C%2Fsvg%3E") !important;
 }
 
+
 #header .swiper-button-next {
   color: #facc15;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23facc15'%2F%3E%3C%2Fsvg%3E") !important;
 }
-.card {
-  border-radius: 4px;
-  padding: 2rem 1rem;
-  width: 12rem;
-  
-}
-@media only screen and (max-width:930px) {
-  .card{
-    width: 14rem;
-    padding: 1.5rem 0.8rem;
+
+@media screen and (max-width:30em){
+  #header .swiper-button-prev {
+    background-image: none !important;
+  }
+  #header .swiper-button-next{
+    background-image: none !important;
+  }
+  #header .swiper-button-prev::after{
+    font-size: 2rem;
+  }
+  #header .swiper-button-next::after{
+    font-size: 2rem;
   }
 }
+
 .card-primary {
   color: #26e2b3;
   border: 2px solid #26e2b3;
@@ -72,6 +77,8 @@ body {
 
 #about_us {
   background-image: url('./assets/random1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 *[id]{

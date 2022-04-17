@@ -14,7 +14,7 @@ import 'swiper/css/autoplay';
 
 const Communique = () => (
   <div id="communique" className="flex flex-col items-center pt-2">
-    <div className="text-[#003865] text-4xl font-black leading-loose  ">
+    <div className="text-[#003865] sm:text-4xl font-black leading-loose xs:text-3xl text-2xl mb-4">
       {SiteData.messageAlumni.heading}
     </div>
     <Swiper
@@ -30,12 +30,12 @@ const Communique = () => (
     >
       {SiteData.messageAlumni.data.map((person) => (
         <SwiperSlide>
-          <div className="flex p-12 gap-8 border-y-2 border-dotted">
+          <div className="flex p-12 sm:border-y-2 xs:space-x-8 xs:border-y-4 border-dotted xs:flex-row flex-col space-x-0 border-y-8">
             <div className="self-center">
               <img src={person.image} alt="" className="max-h-[13rem]" />
             </div>
             <div className="flex flex-col space-y-4">
-              <div className="font-bold leading-8 md:text-xl  lg:text-2xl  text-[#003865]">
+              <div className="font-bold leading-8 md:text-xl  lg:text-2xl  text-[#003865] xs:text-left text-center">
                 {person.name}
               </div>
               <div className="max-w-[30rem]  text-[#003865]">

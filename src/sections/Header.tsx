@@ -19,10 +19,10 @@ const Header = () => (
       keyboard
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
       // autoplay={{ delay: 3000 }}
-      className="mySwiper h-[90vh] w-full mt-[80px] flex items-center ]"
+      className="mySwiper h-[100vh] w-full flex items-center ]"
     >
       <SwiperSlide>
-        <div className="grid grid-cols-4 gap-10 absolute z-10 m-auto top-1/3 xl:right-40 xl:left-40 lg:right-16 lg:left-16 bottom-1/3 text-white">
+        <div className="grid pt-8 grid-cols-4 xs:gap-x-10 xs:gap-y-10 gap-y-32 gap-x-4 z-10 m-auto xl:right-40 xl:left-40 lg:right-16 lg:left-16 text-white">
           <div className="col-span-2  grid grid-cols-3 ">
             <i className="lg:text-6xl fa-solid fa-indian-rupee-sign text-yellow-400 md:text-4xl" />
             <h1 className="lg:text-4xl md:text-2xl col-span-2 ">
@@ -52,10 +52,10 @@ const Header = () => (
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="grid grid-cols-4 gap-10 absolute z-10 m-auto top-1/3 right-64 left-64 bottom-1/3 text-white">
+        <div className="grid pt-8 grid-cols-4 xs:gap-x-10 xs:gap-y-10 gap-y-32 gap-x-4 z-10 m-auto xl:right-40 xl:left-40 lg:right-16 lg:left-16 text-white">
           <div className="col-span-2  grid grid-cols-3  ">
-            <i className="text-6xl fa-solid  fa-dollar-sign text-yellow-400 text-center" />
-            <h1 className="text-4xl col-span-2 ">
+            <i className="lg:text-6xl fa-solid fa-dollar-sign text-yellow-400 md:text-4xl" />
+            <h1 className="lg:text-4xl md:text-2xl col-span-2 ">
               Dream Offers:
               {/* <br /> */}
               {' '}
@@ -63,16 +63,16 @@ const Header = () => (
             </h1>
           </div>
           <div className="col-span-2  grid grid-cols-3  ">
-            <i className="text-6xl fa-solid fa-laptop-code  text-yellow-400" />
-            <h1 className="text-4xl col-span-2">110+ Internship Offers</h1>
+            <i className="lg:text-6xl fa-solid fa-laptop-code text-yellow-400 md:text-4xl" />
+            <h1 className="lg:text-4xl md:text-2xl col-span-2">110+ Internship Offers</h1>
           </div>
           <div className="col-span-2  grid grid-cols-3  ">
-            <i className="text-6xl fa-solid fa-code text-yellow-400 " />
-            <h1 className="text-4xl col-span-2  "> 7 GSOC Selections</h1>
+            <i className="lg:text-6xl fa-solid fa-code text-yellow-400 md:text-4xl" />
+            <h1 className="lg:text-4xl md:text-2xl col-span-2  "> 7 GSOC Selections</h1>
           </div>
           <div className="col-span-2  grid grid-cols-3 ">
-            <i className="text-6xl fa-solid  fa-percent text-yellow-400" />
-            <h1 className="text-4xl col-span-2">
+            <i className="lg:text-6xl fa-solid fa-percent text-yellow-400 md:text-4xl" />
+            <h1 className="lg:text-4xl md:text-2xl col-span-2">
               Average Package:
               {' '}
               <br />
