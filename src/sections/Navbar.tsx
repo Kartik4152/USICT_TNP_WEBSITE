@@ -6,7 +6,6 @@ const Navbar = () => {
   const secondRef = useRef<any>(null);
   const click = (e: any) => {
     if (e.type === 'keydown' && !(e.code === 'Enter' || e.code === 'Space')) return;
-    e.preventDefault();
     myref.current.classList.toggle('active');
     secondRef.current.classList.toggle('!h-24');
   };
@@ -44,15 +43,15 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <div ref={secondRef} role="button" tabIndex={0} onClick={click} onKeyDown={click} className="text-black transition-all duration-300 delay-300 overflow-hidden h-0">
+      <div ref={secondRef} className="text-black transition-all duration-300 delay-300 overflow-hidden h-0">
         <div className="flex flex-row flex-wrap space-x-4 sm:space-x-8 justify-center items-center py-2 px-2 xs:text-base text-sm">
-          <a href="#header" className="my-2"><span>Home</span></a>
-          <a href="#about_us" className="my-2"><span>About Us</span></a>
-          <a href="#ranking" className="my-2"><span>Rankings</span></a>
-          <a href="#communique" className="my-2"><span>Alumni Communique</span></a>
-          <a href="#statistics" className="my-2"><span>Statistics</span></a>
-          <a href="#faq" className="my-2"><span>FAQs</span></a>
-          <a href="#footer" className="my-2"><span>Contact</span></a>
+          <a href="#header" className="my-2" onClick={click}><span>Home</span></a>
+          <a href="#about_us" className="my-2" onClick={click}><span>About Us</span></a>
+          <a href="#ranking" className="my-2" onClick={click}><span>Rankings</span></a>
+          <a href="#communique" className="my-2" onClick={click}><span>Alumni Communique</span></a>
+          <a href="#statistics" className="my-2" onClick={click}><span>Statistics</span></a>
+          <a href="#faq" className="my-2" onClick={click}><span>FAQs</span></a>
+          <a href="#footer" className="my-2" onClick={click}><span>Contact</span></a>
           <a href="https://usict-ggsipu.calyxpod.com/sorNHC/sign-up" target="_blank" rel="noreferrer">
             <div className="bg-[#003865] px-4 py-2 rounded-sm text-white" role="button">Login/Sign Up</div>
           </a>
