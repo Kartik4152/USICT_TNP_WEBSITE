@@ -45,8 +45,14 @@ body {
   border-radius: 4px;
   padding: 2rem 1rem;
   width: 12rem;
+  
 }
-
+@media only screen and (max-width:930px) {
+  .card{
+    width: 14rem;
+    padding: 1.5rem 0.8rem;
+  }
+}
 .card-primary {
   color: #26e2b3;
   border: 2px solid #26e2b3;

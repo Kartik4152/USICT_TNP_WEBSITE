@@ -9,7 +9,7 @@ const Rankings = () => (
     <img
       src={imageRankings}
       alt="rankings"
-      className="w-3/5 object-contain"
+      className="w-full lg:w-3/5 object-contain"
     />
   </div>
 );

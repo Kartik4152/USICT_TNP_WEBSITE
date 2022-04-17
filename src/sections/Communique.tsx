@@ -25,17 +25,17 @@ const Communique = () => (
       mousewheel
       keyboard
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-      autoplay={{ delay: 3000 }}
+      // autoplay={{ delay: 3000 }}
       className="mySwiper min-h-[25rem] w-full flex items-center"
     >
       {SiteData.messageAlumni.data.map((person) => (
         <SwiperSlide>
-          <div className="flex p-8 gap-8 border-y-2 border-dotted">
+          <div className="flex p-12 gap-8 border-y-2 border-dotted">
             <div className="self-center">
               <img src={person.image} alt="" className="max-h-[13rem]" />
             </div>
             <div className="flex flex-col space-y-4">
-              <div className="font-bold leading-8 text-2xl text-[#003865]">
+              <div className="font-bold leading-8 md:text-xl  lg:text-2xl  text-[#003865]">
                 {person.name}
               </div>
               <div className="max-w-[30rem]  text-[#003865]">

@@ -4,8 +4,8 @@ type Ivariant = 'primary' | 'secondary' | 'fill';
 
 const BorderCard:FC<{title: string, content: string, variant: Ivariant}> = ({ title, content, variant }) => (
   <div className={`flex flex-col items-center card card-${variant} shadow-2xl`}>
-    <div>{title}</div>
-    <div className="font-bold text-2xl">{content}</div>
+    <div className="">{title}</div>
+    <div className="font-bold md:text-2xl text-lg">{content}</div>
   </div>
 );
 
