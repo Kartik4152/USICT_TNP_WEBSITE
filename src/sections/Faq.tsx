@@ -3,7 +3,7 @@ import SiteData from 'SiteData';
 import Accordion from '../components/Accordion';
 
 const Faq = () => (
-  <div className="w-full py-8">
+  <div className="w-full py-8 px-8">
     <div id="faq" className="w-full flex justify-center">
       <div className="w-4/5 flex flex-col items-center">
         <h1 className="mb-4 text-4xl font-bold text-[#003865] leading-loose">{SiteData.faq.heading1}</h1>

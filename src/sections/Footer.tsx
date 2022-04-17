@@ -10,21 +10,21 @@ import logoFacebook from '../assets/facebook.webp';
 /* eslint-disable */
 const Footer = () => (
   <div id="footer" className="bg-[#242424] w-full flex flex-col items-center">
-    <div className="w-3/5 py-12 text-white">
-      <div className="flex items-center w-full justify-between border-b-4 pb-8 mb-8 border-[#777777]">
+    <div className="lg:w-3/5 w-4/5 py-12 text-white">
+      <div className="flex sm:items-center w-full justify-between border-b-4 pb-8 mb-8 border-[#777777]">
         <FooterCard title="FIND US" icon={logoPin} text="Dean Office, USICT, GGSIPU Sector 16C, Dwarka, Delhi" />
         <FooterCard title="CALL US" icon={logoPhone} text="011-25302843" />
         <FooterCard title="MAIL US" icon={logoMail} text="info@tnp.ac.in" />
       </div>
       <div className="flex justify-between w-full">
         <div className="flex flex-col space-y-4">
-          <h1 className="uppercase text-2xl">Quick Links</h1>
+          <h1 className="uppercase text-xl md:text-2xl">Quick Links</h1>
           <span>&gt; Procedure</span>
           <span>&gt; Recruiters</span>
           <span>&gt; Statistics</span>
         </div>
         <div className="flex flex-col space-y-4">
-          <h1 className="uppercase text-2xl">Social Links</h1>
+          <h1 className="uppercase text-xl md:text-2xl">Social Links</h1>
           <a href="https://instagram.com/tnp_usict">
           <span
             role="button"
@@ -47,10 +47,10 @@ const Footer = () => (
           </span>
           </a>
         </div>
-        <img src={QrCode} alt="qr code" className="w-48 h-48 object-contain object-right" />
+        <img src={QrCode} alt="qr code" className="md:w-48 md:h-48 w-36 h-36 object-contain object-right" />
       </div>
     </div>
-    <div className="bg-[#2D2D2D] w-full flex items-center justify-center text-white p-4 py-8">
+    <div className="bg-[#2D2D2D] text-sm md:text-lg text-center  w-full flex items-center justify-center text-white px-14 sm:p-4 py-8">
       © Conceptualized, designed and developed by office bearers of Training and Placement Cell
     </div>
   </div>
