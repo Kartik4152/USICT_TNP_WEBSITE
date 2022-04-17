@@ -1,5 +1,5 @@
 import React, {
-  useState, FC,
+  useState, FC, useRef, useEffect,
 } from 'react';
 
 const Accordion:FC<{title: string, content: string}> = ({ title, content }) => {
@@ -9,13 +9,18 @@ const Accordion:FC<{title: string, content: string}> = ({ title, content }) => {
     setIsActive((prev) => !prev);
   };
 
+  const contentRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (contentRef.current) { contentRef.current.innerHTML = content; }
+  }, [isActive]);
+
   return (
     <div className="accordion-item">
       <div className="p-4 hover:bg-[#E7E9E8] font-bold flex justify-between cursor-pointer bg-[#f7f9f9]" onClick={() => setIsActive((prev) => !prev)} onKeyDown={openFaq} tabIndex={0} role="button">
         <div>{title}</div>
         <div>{isActive ? '-' : '+'}</div>
       </div>
-      {isActive && <div className="bg-[#f7f9f9] p-4">{content}</div>}
+      {isActive && <div ref={contentRef} className="bg-[#f7f9f9] p-4" />}
     </div>
   );
 };

@@ -48,27 +48,39 @@ export default {
     heading1: 'Any questions?',
     data: [
       {
-        question: 'How do I contact USICT as a recruiter',
-        answer: 'A contact between the recruiters and the cell can be established through our email - usict.placementcell@ipu.ac.in . Recruiters are also request to fill the following Job Notification Form (JNF) form in case they want to conduct on campus placement drives. Link to JNF- https://forms.gle/Q9pUWriyy8qYd5Q46'
+        question: 'How do I contact USICT as a recruiter?',
+        answer: 'A contact between the recruiters and the cell can be established through our email - usict.placementcell@ipu.ac.in . Recruiters are also request to fill the following Job Notification Form (JNF) form in case they want to conduct on campus placement drives. Link to JNF- <a class="text-blue-600" href="https://forms.gle/Q9pUWriyy8qYd5Q46">https://forms.gle/Q9pUWriyy8qYd5Q46</a>'
       },
       {
-        question: 'What are recent placement statistics',
+        question: 'What are recent placement statistics?',
         answer: 'All the updated placement statistics are uploaded and maintained by each school on their individual pages. It is advised that you visit the individual school’s placement page for more details'
       },
       {
-        question: 'What are the recently published opportunities for me',
-        answer: 'nahi pta'
+        question: 'What are steps involved in the placement process?',
+        answer: `
+        The various steps involved in the placement process are :-
+        <br>
+        •&nbsp;Invitation
+        <br>
+        •&nbsp;Slot Allocation
+        <br>
+        •&nbsp;Pre-Placement Talk
+        <br>
+        •&nbsp;Selection Process 
+        <br>
+        •&nbsp;Result Declaration
+      `
       },
       {
-        question: 'How do I contact the placement cell',
-        answer: 'nahi pta'
+        question: 'How to contact us as a student?',
+        answer: 'Students can contact the cell following the communication channels specified by us. Please refer the contact us section for more details.'
       },
       {
-        question: 'How do escalate my queries for fastest resolutions',
-        answer: 'All the queries regarding the placements should be escalated through our email channels for faster resolutions.Email- students.usict.tpc@ipu.ac.in'
+        question: 'How do escalate my queries for fastest resolutions?',
+        answer: 'All the queries regarding the placements should be escalated through our email channels for faster resolutions. Email- <a class="text-blue-600" href="mailto:students.usict.tpc@ipu.ac.in">students.usict.tpc@ipu.ac.in</a>'
       },
       {
-        question: 'What are the placement policies',
+        question: 'What are the placement policies?',
         answer: 'Yet to be disclosed.'
       }
     ]
