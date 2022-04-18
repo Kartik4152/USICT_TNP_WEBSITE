@@ -80,7 +80,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 *[id]{
   scroll-margin-top: 5rem;
 }

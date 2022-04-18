@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 const Communique = () => (
-  <div id="communique" className="flex flex-col items-center pt-2">
+  <div id="communique" className="flex flex-col items-center py-36">
     <div className="text-[#003865] sm:text-4xl font-black leading-loose xs:text-3xl text-2xl mb-4">
       {SiteData.messageAlumni.heading}
     </div>
