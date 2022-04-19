@@ -31,14 +31,14 @@ const Navbar = () => {
           <span />
         </div>
         <div className=" space-x-4 items-center hidden xl:flex cursor-pointer">
-          <a href="#header"><span>Home</span></a>
-          <a href="#about_us"><span>About Us</span></a>
-          <a href="#ranking"><span>Rankings</span></a>
-          <a href="#communique"><span>Alumni Communique</span></a>
-          <a href="#statistics"><span>Statistics</span></a>
-          <a href="#faq"><span>FAQs</span></a>
-          <a href="#footer"><span>Contact</span></a>
-          <a href="https://usict-ggsipu.calyxpod.com/sorNHC/sign-up" target="_blank" rel="noreferrer">
+          <a href="#header" className="hover-underline-animation"><span>Home</span></a>
+          <a href="#about_us" className="hover-underline-animation"><span>About Us</span></a>
+          <a href="#ranking" className="hover-underline-animation"><span>Rankings</span></a>
+          <a href="#communique" className="hover-underline-animation"><span>Alumni Communique</span></a>
+          <a href="#statistics" className="hover-underline-animation"><span>Statistics</span></a>
+          <a href="#faq" className="hover-underline-animation"><span>FAQs</span></a>
+          <a href="#footer" className="hover-underline-animation"><span>Contact</span></a>
+          <a href="https://usict-ggsipu.calyxpod.com/" target="_blank" rel="noreferrer">
             <div className="bg-[#003865] px-4 py-2 rounded-sm text-white" role="button">Login/Sign Up</div>
           </a>
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <a href="#statistics" className="my-2" onClick={click}><span>Statistics</span></a>
           <a href="#faq" className="my-2" onClick={click}><span>FAQs</span></a>
           <a href="#footer" className="my-2" onClick={click}><span>Contact</span></a>
-          <a href="https://usict-ggsipu.calyxpod.com/sorNHC/sign-up" target="_blank" rel="noreferrer">
+          <a href="https://usict-ggsipu.calyxpod.com/" target="_blank" rel="noreferrer">
             <div className="bg-[#003865] px-4 py-2 rounded-sm text-white" role="button">Login/Sign Up</div>
           </a>
         </div>
