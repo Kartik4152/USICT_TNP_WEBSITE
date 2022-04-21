@@ -9,7 +9,7 @@ import logoLinkedin from '../assets/linkedin_icon.png';
 import logoFacebook from '../assets/facebook.webp';
 /* eslint-disable */
 const Footer = () => (
-  <div id="footer" className="bg-[#242424] w-full flex flex-col items-center pb-11 pt-14">
+  <div id="footer" className="bg-[#242424] w-full flex flex-col items-center">
     <div className="lg:w-3/5 xs:w-10/12 w-11/12 py-12 text-white">
       <div className="flex sm:items-center w-full justify-between border-b-4 pb-8 mb-8 border-[#777777]">
         <a href="https://goo.gl/maps/916NRahDy6rvrZgr6" >
