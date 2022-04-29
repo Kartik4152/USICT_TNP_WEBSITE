@@ -14,11 +14,11 @@ const Header = () => (
   <div className="relative" id="header">
     <Swiper
       cssMode
-      loop
-      navigation
+      loop = {false}
+      navigation = {true}
       keyboard
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-      // autoplay={{ delay: 3000 }}
+       autoplay={{ delay: 3000 }}
       className="mySwiper h-[100vh] w-full flex items-center ]"
     >
       <SwiperSlide>
