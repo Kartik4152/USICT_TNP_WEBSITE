@@ -43,17 +43,20 @@ body {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23facc15'%2F%3E%3C%2Fsvg%3E") !important;
 }
 
-@media screen and (max-width:30em){
+@media screen and (max-width:30em) {
   #header .swiper-button-prev {
     background-image: none !important;
   }
-  #header .swiper-button-next{
+
+  #header .swiper-button-next {
     background-image: none !important;
   }
-  #header .swiper-button-prev::after{
+
+  #header .swiper-button-prev::after {
     font-size: 2rem;
   }
-  #header .swiper-button-next::after{
+
+  #header .swiper-button-next::after {
     font-size: 2rem;
   }
 }
@@ -81,13 +84,15 @@ body {
   background-repeat: no-repeat;
 }
 *[id]{
+*[id] {
   scroll-margin-top: 5rem;
 }
-i{
+
+i {
   text-align: center;
 }
 
-.navMenu > span {
+.navMenu>span {
   display: block;
   width: 34px;
   height: 2px;
@@ -95,12 +100,12 @@ i{
   background-color: black;
 }
 
-.navMenu > span:not(:last-child) {
+.navMenu>span:not(:last-child) {
   margin-bottom: 7px;
 }
 
 .navMenu,
-.navMenu > span {
+.navMenu>span {
   transition: all 0.4s ease-in-out;
 }
 
@@ -109,20 +114,44 @@ i{
   transform: rotate(45deg);
 }
 
-.navMenu.active > span:nth-child(2) {
+.navMenu.active>span:nth-child(2) {
   width: 0%;
 }
 
-.navMenu.active > span:nth-child(1),
-.navMenu.active > span:nth-child(3) {
+.navMenu.active>span:nth-child(1),
+.navMenu.active>span:nth-child(3) {
   transition-delay: 0.4s;
 }
 
-.navMenu.active > span:nth-child(1) {
+.navMenu.active>span:nth-child(1) {
   transform: translateY(9px);
 }
 
-.navMenu.active > span:nth-child(3) {
+.navMenu.active>span:nth-child(3) {
   transform: translateY(-9px) rotate(90deg);
 }
 
+/* hover class nav links */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #003865;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
