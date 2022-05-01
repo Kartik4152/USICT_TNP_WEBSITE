@@ -13,8 +13,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 const Communique = () => (
-  <div id="communique" className="flex flex-col items-center pt-2">
-    <div className="text-[#003865] sm:text-4xl font-black leading-loose xs:text-3xl text-2xl mb-4">
+  <div id="communique" className="flex flex-col items-center pt-1 pb-1 py-8 ">
+    <div className="text-4xl font-bold text-[#003865] leading-loose offset-border">
       {SiteData.messageAlumni.heading}
     </div>
     <Swiper

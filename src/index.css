@@ -83,11 +83,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-*[id] {
+*[id] 
+{
   scroll-margin-top: 5rem;
 }
-
 i {
   text-align: center;
 }

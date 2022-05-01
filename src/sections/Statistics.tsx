@@ -6,7 +6,7 @@ import industries from '../assets/average.svg';
 import expertise from '../assets/Final.svg';
 
 const Statistics = () => (
-  <div id="statistics" className="w-full flex justify-center pt-8 pb-12">
+  <div id="statistics" className="w-full flex justify-center pt-0 py-8">
     <div className="xl:w-3/5 w-full xs:px-8 px-4 xl:px-0 flex flex-col items-center">
       <h1 className="mb-8 text-4xl font-bold text-[#003865] leading-loose offset-border">
         Statistics
