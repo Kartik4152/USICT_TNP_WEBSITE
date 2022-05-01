@@ -7,20 +7,17 @@ import logoMail from '../assets/mail_icon.png';
 import logoInstagram from '../assets/instagram_icon.png';
 import logoLinkedin from '../assets/linkedin_icon.png';
 import logoFacebook from '../assets/facebook.webp';
+
 /* eslint-disable */
 const Footer = () => (
   <div id="footer" className="bg-[#242424] w-full flex flex-col items-center">
     <div className="lg:w-3/5 xs:w-10/12 w-11/12 py-12 text-white">
-      <div className="flex sm:items-center w-full justify-between border-b-4 pb-8 mb-8 border-[#777777]">
-        <a href="https://goo.gl/maps/916NRahDy6rvrZgr6" >
-            <FooterCard title="FIND US" icon={logoPin} text="Dean Office, USICT, GGSIPU Sector 16C, Dwarka, Delhi" />
-        </a>
-        <a href="tel:011-25302843" >
-            <FooterCard title="CALL US" icon={logoPhone} text="011-25302843" />
-        </a>
-        <a href="mailto:info@tnp.ac.in" >
-            <FooterCard title="MAIL US" icon={logoMail} text="info@tnp.ac.in" />
-        </a>
+      <div className="flex sm:items-center w-full justify-between border-b-4 pb-8 mb-8 border-[#777777] md:w-full">
+
+          <FooterCard title="FIND US" icon={logoPin} text="Dean Office, USICT, GGSIPU Sector 16C, Dwarka, Delhi" link='https://goo.gl/maps/916NRahDy6rvrZgr6'/>
+          <FooterCard title="CALL US" icon={logoPhone} text="011-25302843" link='tel:011-25302843'/>
+          <FooterCard title="MAIL US" icon={logoMail} text="info@tnp.ac.in" link='mailto:info@tnp.ac.in'/>
+       
       </div>
       <div className="flex justify-between w-full xs:flex-row xs:items-start xs:space-y-0 flex-col items-center space-y-8">
         <div className="flex flex-col space-y-4 xs:text-left text-center">
