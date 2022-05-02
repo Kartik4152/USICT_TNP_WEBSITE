@@ -20,12 +20,12 @@ const Communique = () => (
     <Swiper
       cssMode
       navigation
-      loop
+      loop={false}
       pagination={false}
       mousewheel
       keyboard
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-      // autoplay={{ delay: 3000 }}
+      autoplay={{ delay: 3000 }}
       className="mySwiper min-h-[25rem] w-full flex items-center"
     >
       {SiteData.messageAlumni.data.map((person) => (
