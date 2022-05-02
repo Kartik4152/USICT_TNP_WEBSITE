@@ -15,7 +15,7 @@ const Header = () => (
     <Swiper
       cssMode
       loop={false}
-      navigation={true}
+      navigation
       keyboard
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
       autoplay={{ delay: 3000 }}

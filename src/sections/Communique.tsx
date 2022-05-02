@@ -19,7 +19,7 @@ const Communique = () => (
     </div>
     <Swiper
       cssMode
-      navigation={true}
+      navigation
       loop={false}
       pagination={false}
       mousewheel
